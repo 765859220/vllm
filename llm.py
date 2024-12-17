@@ -150,7 +150,7 @@ class LLM(LLM):
         hf_overrides: Optional[HfOverrides] = None,
         mm_processor_kwargs: Optional[Dict[str, Any]] = None,
         # After positional args are removed, move this right below `model`
-        task: TaskOption = "auto",
+        task: TaskOption = "generate",
         override_pooler_config: Optional[PoolerConfig] = None,
         compilation_config: Optional[Union[int, Dict[str, Any]]] = None,
         **kwargs,
